@@ -24,10 +24,10 @@ def main():
         output = ''
         msg = input('Encode: ' if mode == '0' else 'Decode: ')
         if mode == '0':
-            output = Coding.msg_to_code(msg)
+            output = Coder.msg_to_code(msg)
             print(' "{}" 已复制'.format(output))
         else:
-            output = Coding.code_to_msg(msg)
+            output = Coder.code_to_msg(msg)
             print(' "{}" 已复制'.format(output))
         os.system('echo "{}" | pbcopy'.format(output))
         print('')
